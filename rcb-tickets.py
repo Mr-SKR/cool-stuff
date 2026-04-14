@@ -9,10 +9,9 @@
 # 4. ChromeDriver installed and added to your system's PATH (https://sites.google.com/a/chromium.org/chromedriver/downloads).
 # Usage:
 # 1. Update the TICKET_URL and BUTTON_XPATH variables in the script to match the target page and button you want to monitor.
-# 2. Run the script: python3 rcb-tickets.py
+# 2. Run the script: python3 rcb-tickets.py (OR) To prevent mac from sleeping, execute caffeinate -i python3 rcb-tickets.py in the terminal. This will keep your Mac awake while the script is running.
 # 3. The script will continuously check the specified page for the button's availability and will alert you when it changes from "SOLD OUT" to "BUY TICKETS".
-# 4. To prevent mac from sleeping, execute caffeinate -i python3 rcb-tickets.py in the terminal. This will keep your Mac awake while the script is running.
-# 5. To stop the script, simply press Ctrl+C in the terminal.
+# 4. To stop the script, simply press Ctrl+C in the terminal.
 # Note: This script is designed for macOS due to its use of native audio commands. If you're using a different operating system, you may need to modify the _trigger_mac_alarm method to use an appropriate method for playing sounds on your platform.
 ##############################################
 import time
